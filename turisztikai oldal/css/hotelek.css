@@ -1,0 +1,376 @@
+.hatter{
+    background-image: url(/kepek/belső_hotel_kep.jpg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-size:cover;
+}
+.vonal{
+    border: solid 1px;
+}
+.vonal_2{
+    border: solid 1px;
+}
+.stilus{
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-weight: 300;
+    font-size: 700%;
+    letter-spacing: 0;
+    margin-top: 50px;
+}
+.ittmegtal{
+    font-size: 15px;
+    color: white;
+}
+.keret{
+    border: solid 1px;
+    background-color: rgb(0,0,0,0.6);
+    padding: 10px;
+    height: 240px;
+    margin: auto;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #66ff66;
+    color: ghostwhite;
+    margin-top: 100px;
+   }
+   
+   button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   button:hover span {
+    color: black;
+   }
+   
+   button::before,
+   button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   button::before {
+    content: "";
+    background: #000000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   button:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   .gomb_1{
+    margin: 50px;
+   }
+   .gomb_2{
+    margin: 50px;
+   }
+
+
+   .contact{
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 0;
+    margin-top: 50px;
+    text-align: center;
+   }
+   
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: black;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: black;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+.iratkozzfel{
+    color: white;
+    padding: 50px;
+}
+
+.cards-container {
+    display: flex;
+    margin-bottom: 1pt;
+    margin-left: 2%; 
+    margin-top: 2%;
+    margin-right: 40%;
+    padding-bottom: 10%;
+    
+}
+
+.card {
+    flex: 1;
+    border: solid;
+    min-height: 190pt;
+    border-radius: 15pt;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1pt;
+    line-height: 1.5em;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.card-avi {
+    width: 100%;
+    border-radius: 10%;
+    max-width: 30%;
+    max-height: 68%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%; 
+}
+
+
+.card-subtitle {
+    margin-bottom: 1pt;
+    max-width: 100%;
+    max-height: 100%;
+    top: 14%;
+    left: 38%; 
+    position: absolute;
+    font-size: 30pt;
+}
+
+.card-desc {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 3000px;
+    max-height: 100px;
+    top: 109px;
+    left: 38%; 
+    right: 210px;
+    position: absolute;
+}
+
+.hely{
+    margin-bottom: 1pt;
+    max-width: 100%;
+    max-height: 100%;
+    top: 32%;
+    left: 38%; 
+    position: absolute;
+    font-size: 12pt;
+}
+
+.rating-box {
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    width: 30pt; 
+    height: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35% 35% 35% 0%; 
+    background-color: #4e74ff; 
+}
+  
+  .rating-content {
+    color: white; 
+    font-size: 15pt;
+    font-weight: bold;
+    position: relative;
+    top: 20%;
+}
+
+.p-right-center{
+  position: absolute;
+  top: 38%;
+  right: 2%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.h3-right-center {
+  position: absolute;
+  top: 42%;
+  right: 2%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.h3-right-center {
+  font-size: 19pt;
+  top: 45%;
+  color: #149F2A; 
+}
+.p-right-center-ketto{
+  position: absolute;
+  top: 52%;
+  right: 2%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.foglalo-gomb {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 170px; 
+    height: 50px;
+    background-color: #4e74ff; 
+    border-radius: 29px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: ghostwhite;
+    cursor: pointer;
+}
+.foglalo-gomb:hover span{
+    background-color: #4e74ff;
+}
+
+.foglalo-gomb:hover::before{
+    background-color:#4e74ff ;
+}
+
+.foglalas{
+  color: white; 
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reklam{
+    display: flex;
+    margin-bottom: 1pt;
+    margin-left: 75%; 
+    margin-right: 1%;
+    margin-top: -56%;
+    padding: 1pt;
+    height: 80%;
+    padding-bottom: 2%;
+}
+
+
+@media screen and (max-width: 1100px){
+    .stilus{
+     font-size: 60px;
+     padding: 5px;
+    }
+    .keret{
+     width: 90%;
+    }
+    .ittmegtal{
+     font-size: 9px;
+    }
+
+
+    .cards-container {
+        flex-direction: column;
+        margin-right: 2%;
+        margin-right: 40%;
+    }
+    .card {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .card-avi {
+        max-width: 30%;
+        left: 2%;
+    }
+    .card-subtitle{
+        font-size: 20pt;
+
+    }
+    .card-desc{
+        font-size: 5pt;
+    }
+ }
